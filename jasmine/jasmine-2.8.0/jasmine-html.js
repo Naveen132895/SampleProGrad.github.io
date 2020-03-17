@@ -207,7 +207,7 @@ jasmineRequire.HtmlReporter = function(j$) {
       if (totalSpecsDefined > 0) {
         percent = ((specsExecuted-failureCount)/specsExecuted)*100,;
         
-        statusBarMessage += pluralize('spec', specsExecuted) + ', ' + pluralize('failure', failureCount)+ ', ' + pluralize('% Completed', percent.toFixed(2));
+        statusBarMessage += pluralize('spec', specsExecuted) + ', ' + pluralize('failure', failureCount)+ ', ' + pluralize('% Completed', percent);
         if (pendingSpecCount) { statusBarMessage += ', ' + pluralize('pending spec', pendingSpecCount); }
         statusBarClassName += (failureCount > 0) ? 'jasmine-failed' : 'jasmine-passed';
       } else {
