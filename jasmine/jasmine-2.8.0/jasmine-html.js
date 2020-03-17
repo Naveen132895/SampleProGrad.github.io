@@ -478,6 +478,6 @@ jasmineRequire.QueryString = function() {
     }
 
   }
-
+  console.log("Hello");
   return QueryString;
 };
